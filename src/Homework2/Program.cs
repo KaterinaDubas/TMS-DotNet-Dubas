@@ -6,7 +6,7 @@ namespace Homework2
     {
         static void Main(string[] args)
         {
-            M: Console.WriteLine("Enter the date to define the day of the week: ");
+            Console.Write("Enter the date to define the day of the week: ");
             String userDate = Console.ReadLine();
             bool result = DateTime.TryParse(userDate, out DateTime date);
             if (result)
@@ -15,8 +15,7 @@ namespace Homework2
             }
             else
             {
-                Console.WriteLine("Date entered incorrectly, try one more time");
-                goto M;
+                Console.WriteLine("Date entered incorrectly");
             }
         }
     }
